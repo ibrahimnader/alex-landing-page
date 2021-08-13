@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+    <title>Alex Giovanni</title>
+    <style></style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg px-5 d-flex justify-content-between">
+        <!-- icons -->
+        <!-- 
+    https://www.iconfinder.com/icons/2998131/camera_photo_photography_icon -->
+        <a href="#" class="navbar-brand">
+          <img
+            src="img/iconfinder_Camera_2998131.svg"
+            alt="logo of camera icon"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-target="#navbar"
+          data-toggle="collapse"
+        >
+          <span class="toggler-icon"> <i class="fas fa-bars"></i> </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar">
+          <ul class="navbar-nav text-capitalize">
+            <li class="nav-item active">
+              <a href="#" class="nav-link">home</a>
+            </li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link">gallery</a></li>
+            <li class="nav-item"><a href="#services" class="nav-link">services</a></li>
+            <li class="nav-item"><a href="#packages" class="nav-link">packages</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!--end of nav-->
+    </header>
+
+    <!--banner-->
+    <div class="banner container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner-text text-center">
+          <h1 class="text-capitalize">
+            hi I'm <strong class="heading-pink">alex Giovanni </strong>
+          </h1>
+          <a href="#gallery" class="btn btn-black text-uppercase my-2">
+            explore
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--end of banner-->
+    <!--about-->
+    <section class="about py-5" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 col-md-6 mx-auto my-5">
+            <h2 class="text-capitalize">
+              about <strong class="heading-pink">me</strong>
+              <p class="my-4 text-muted w-75">
+                I tell others story with my camera.Always trying my best to make your occasions so special.
+               <p class="text-muted">
+                <span class="heading-pink">"</span>The camera can photograph thoughts better than a paragraph of sweet polemic<span class="heading-pink">"</span>
+               </p>
+              </p>
+              <a href="" class="btn btn-black text-uppercase"> explore</a>
+            </h2>
+          </div>
+          <div class="col-10 col-md-4 mx-auto my-5 align-self-center">
+            <div class="about-img__container">
+              <img
+                src="img/pexels-kaique-rocha-90368.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end of about-->
+       <!--services-->
+       <section id="services" class="services py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 text-center my-3 service">
+              <!--https://www.iconfinder.com/icons/4171242/day_heart_love_ring_valentine_valentines_wedding_icon-->
+              <img
+                src="img/iconfinder_660_ring_love_heart_wedding_valentine_valentines_day_love_4171242.png"
+                alt=""
+              />
+              <h6 class="text-uppercase my-3 service-title">events</h6>
+              <p class="w-75 mx-auto text-left service-text">
+                Event photography is a wide and popular niche that includes many
+                specific kinds of events, such as concerts, birthdays, corporate
+                meetings, and weddings.
+              </p>
+            </div>
+            <div class="col-md-4 text-center my-3 service">
+              <!-- 
+      https://www.iconfinder.com/icons/2998126/basket_food_fruit_garden_harvest_natural_icon-->
+              <img src="img/iconfinder_Harvest_2998126.png" alt="" />
+              <h6 class="text-uppercase my-3 service-title">food</h6>
+              <p class="w-75 mx-auto text-left service-text">
+                today’s social media generation has influenced us to keep taking
+                photos of our food, whether for fun or for marketing purposes.
+              </p>
+            </div>
+            <div class="col-md-4 text-center my-3 service">
+              <!-- 
+      https://www.iconfinder.com/icons/3231118/aunt_cartoon_family_lady_person_woman_icon -->
+              <img src="img/iconfinder_Aunt_3231118.png" alt="" />
+              <h6 class="text-uppercase my-3 service-title">portraits</h6>
+              <p class="w-75 mx-auto text-left service-text">
+                Portraiture is arguably one of the most popular photography
+                styles.Also known as candid photography, the beauty of portrait
+                photography is that it allows you to capture a subject’s
+                personality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end of services-->
+    <!--start of gallery-->
+    <section class="gallery py-5" id="gallery">
+      <div class="container">
+        <div class="row justify-content-center text-center text-capitalize">
+          <h2 class="text-capitalize col-10 col-sm-6">
+            my <strong class="heading-pink">gallery</strong>
+          </h2>
+          <ul
+            class="col-lg-8 mx-auto justify-content-center my-3 gallery-buttons d-flex flex-wrap"
+          >
+            <li>
+              <button
+                data-filter="all"
+                class="text-uppercase m-2 btn btn-black"
+                >All</button
+              >
+            </li>
+            <li>
+              <button
+                href="#"
+                data-filter="wedding"
+                class="text-uppercase m-2 mx-3 btn btn-black"
+                >weddings</button
+              >
+            </li>
+            <li>
+              <button
+                href="#"
+                data-filter="portrait"
+                class="text-uppercase m-2 mx-3 btn btn-black"
+                >portraits</button
+              >
+            </li>
+            <li>
+              <button
+                data-filter="food"
+                class="text-uppercase m-2 mx-3 btn btn-black"
+                >food</button
+              >
+            </li>
+            <li>
+              <button
+                data-filter="nuture"
+                class="text-uppercase m-2 mx-3 btn btn-black"
+                >nuture</button
+              >
+            </li>
+            <li>
+              <button
+                data-filter="others"
+                class="text-uppercase m-2 mx-3 btn btn-black"
+                >others</button
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="row photos">
+          <!--single item card-->
+          <div
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+            data-item="wedding"
+          >
+              <div class="img-container">
+                <img
+                  src="img/wedding (1).png"
+                  alt=""
+                  class="  gallery-item-img"
+                />
+               
+              </div>
+           
+          </div>
+          <!-- end of single item card-->
+          <!--single item card-->
+          <div
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+            data-item="food"
+          >
+              <div class="img-container">
+                <img
+                  src="img/x (1).png"
+                  alt=""
+                  class="  gallery-item-img"
+                />
+               
+              </div>
+           
+          </div>
+          <!-- end of single item card-->
+          <!--single item card-->
+          <div
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+            data-item="portrait"
+          >
+              <div class="img-container">
+                <img
+                  src="img/port (1).png"
+                  alt=""
+                  class="  gallery-item-img"
+                />
+               
+              </div>
+           
+          </div>
+          <!-- end of single item card-->
+          <!--single item card-->
+          <div
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+            data-item="nuture"
+          >
+              <div class="img-container">
+                <img
+                  src="img/nuture (1).png"
+                  alt=""
+                  class="  gallery-item-img"
+                />
+               
+              </div>
+           
+          </div>
+          <!-- end of single item card-->
+          <!--single item card-->
+          <div
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+            data-item="others"
+          >
+              <div class="img-container">
+                <img
+                  src="img/others (1).png"
+                  alt=""
+                  class="  gallery-item-img"
+                />
+               
+              </div>
+           
+          </div>
+          <!-- end of single item card-->
+          <!--end of collection-->
+           <!--single item card-->
+           <div
+           class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+           data-item="wedding"
+         >
+             <div class="img-container">
+               <img
+                 src="img/wedding (2).png"
+                 alt=""
+                 class="  gallery-item-img"
+               />
+              
+             </div>
+          
+         </div>
+         <!-- end of single item card-->
+      
+         <!--single item card-->
+         <div
+           class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+           data-item="portrait"
+         >
+             <div class="img-container">
+               <img
+                 src="img/port (2).png"
+                 alt=""
+                 class="  gallery-item-img"
+               />
+              
+             </div>
+          
+         </div>
+         <!-- end of single item card-->
+         <!--single item card-->
+         <div
+           class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+           data-item="nuture"
+         >
+             <div class="img-container">
+               <img
+                 src="img/nuture (2).png"
+                 alt=""
+                 class="  gallery-item-img"
+               />
+              
+             </div>
+          
+         </div>
+         <!-- end of single item card-->
+         <!--single item card-->
+         <div
+           class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+           data-item="others"
+         >
+             <div class="img-container">
+               <img
+                 src="img/others (2).png"
+                 alt=""
+                 class="  gallery-item-img"
+               />
+              
+             </div>
+          
+         </div>
+         <!-- end of single item card-->
+         <!--end of collection-->
+          <!--single item card-->
+          <div
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+            data-item="wedding"
+          >
+              <div class="img-container">
+                <img
+                  src="img/wedding (3).png"
+                  alt=""
+                  class="  gallery-item-img"
+                />
+               
+              </div>
+           
+          </div>
+          <!-- end of single item card-->
+          <!--single item card-->
+          <div
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+            data-item="food"
+          >
+              <div class="img-container">
+                <img
+                  src="img/oil.png"
+                  alt=""
+                  class="  gallery-item-img"
+                />
+               
+              </div>
+           
+          </div>
+          <!-- end of single item card-->
+          <!--single item card-->
+          <div
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+            data-item="portrait"
+          >
+              <div class="img-container">
+                <img
+                  src="img/port (3).png"
+                  alt=""
+                  class="  gallery-item-img"
+                />
+               
+              </div>
+           
+          </div>
+          <!-- end of single item card-->
+          <!--single item card-->
+          <div
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+            data-item="nuture"
+          >
+              <div class="img-container">
+                <img
+                  src="img/nuture (3).png"
+                  alt=""
+                  class="  gallery-item-img"
+                />
+               
+              </div>
+           
+          </div>
+          <!-- end of single item card-->
+          <!--single item card-->
+          <div
+            class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+            data-item="others"
+          >
+              <div class="img-container">
+                <img
+                  src="img/others (3).png"
+                  alt=""
+                  class="  gallery-item-img"
+                />
+               
+              </div>
+           
+          </div>
+          <!-- end of single item card-->
+          <!--end of collection-->
+           <!--single item card-->
+           <div
+           class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+           data-item="wedding"
+         >
+             <div class="img-container">
+               <img
+                 src="img/wedding (4).png"
+                 alt=""
+                 class="  gallery-item-img"
+               />
+              
+             </div>
+          
+         </div>
+         <!-- end of single item card-->
+         <!--single item card-->
+         <div
+           class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+           data-item="food"
+         >
+             <div class="img-container">
+               <img
+                 src="img/x (3).png"
+                 alt=""
+                 class="  gallery-item-img"
+               />
+              
+             </div>
+          
+         </div>
+         <!-- end of single item card-->
+         <!--single item card-->
+         <div
+           class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+           data-item="portrait"
+         >
+             <div class="img-container">
+               <img
+                 src="img/port (4).png"
+                 alt=""
+                 class="  gallery-item-img"
+               />
+              
+             </div>
+          
+         </div>
+         <!-- end of single item card-->
+         <!--single item card-->
+         <div
+           class="col-10 col-sm-6 col-lg-4 mx-auto my-3 gallery-item "
+           data-item="nuture"
+         >
+             <div class="img-container">
+               <img
+                 src="img/nuture (4).png"
+                 alt=""
+                 class="
+                  gallery-item-img"
+               />
+              
+             </div>
+          
+         </div>
+         <!-- end of single item card-->
+        
+         <!--end of collection-->
+
+        </div>
+      </div>
+    </section>
+    <!--end of gallery-->
+
+ 
+    <!-- packages-->
+    <section class="packages py-5" id="packages">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <h2 class="text-capitalize col-10 col-sm-6">
+            weddings <strong class="heading-pink">packages</strong>
+          </h2>
+        </div>
+        <div class="row">
+          <div
+            class="col-11 text-center mx-auto col-md-6 col-lg-4 my-4 text-capitalize"
+          >
+            <h3 class="py-4">basic</h3>
+            <div class="text-muted">
+              <p>4 hourse coverage</p>
+              <p>1 photographer</p>
+              <p>hd photos</p>
+              <p>photo album</p>
+            </div>
+
+            <button class="btn btn-pink">order now</button>
+            <p class="text-lowercase my-4">starting at $50</p>
+          </div>
+          <div
+            class="col-11 text-center mx-auto col-md-6 col-lg-4 my-4 text-capitalize"
+          >
+            <h3 class="py-4">average</h3>
+            <div class="text-muted">
+              <p>6 hourse coverage</p>
+              <p>2 photographer</p>
+              <p>hd photos</p>
+              <p>photo album</p>
+            </div>
+
+            <button class="btn btn-pink">order now</button>
+            <p class="text-lowercase my-4">starting at $75</p>
+          </div>
+          <div
+            class="col-11 text-center mx-auto col-md-6 col-lg-4 my-4 text-capitalize"
+          >
+            <h3 class="py-4">ultimate</h3>
+            <div class="text-muted">
+              <p>8 hourse coverage</p>
+              <p>3 photographer</p>
+              <p>hd photos</p>
+              <p>2 photo albums</p>
+            </div>
+
+            <button class="btn btn-pink">order now</button>
+            <p class="text-lowercase my-4">starting at $100</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end packages-->
+    <!--footer-->
+    <footer id="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 footer-social py-5 text-capitalize text-center">
+            <h2>
+              <strong class="heading-pink">alex Giovanni</strong>
+            </h2>
+            <div class="footer-icons my-5">
+              <div class="row justify-content-around">
+                <a href="" class="footer-icon">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="" class="footer-icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="footer-icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="footer-icon">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 py-5 footer-contact text-center text-capitalize p-5"
+          >
+            <h2 class="mb-5">contact</h2>
+            <div>
+              <p class="d-flex flex-wrap">
+                <span class="mr-4 footer-icon">
+                  <i class="fas fa-map"></i>
+                </span>
+                <span> 123 main street, new yourk </span>
+              </p>
+              <p class="d-flex flex-wrap">
+                <span class="mr-4 footer-icon">
+                  <i class="fas fa-phone"></i>
+                </span>
+                <span> 0123456789 </span>
+              </p>
+              <p class="d-flex flex-wrap">
+                <span class="mr-4 footer-icon">
+                  <i class="fas fa-envelope-open"></i>
+                </span>
+                <span> alexGiovanni@gmail.com </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--end of footer-->
+
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- script js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

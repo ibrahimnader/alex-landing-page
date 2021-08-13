@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+:root {
+  --mainColor: #a34a28;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #dfddc7;
+  --mainBlack: #211717;
+  --yellowTrans: #f58b54;
+  --grayTrans: rgba(80, 80, 80, 0.5);
+  --mainGrey: rgb(216, 216, 216);
+}
+html {
+  scroll-behavior: smooth;
+  transition: scroll-behavior 0.5s ease-in-out;
+}
+body {
+  font-family: "Kaushan Script", cursive;
+  background: var(--mainWhite);
+  position: relative;
+  color: var(--mainBlack);
+}
+.heading-pink {
+  color: var(--mainColor);
+  font-size: 4rem;
+}
+.btn-black {
+  font-size: 1.5rem;
+  color: var(--mainBlack);
+  border: 0.2rem solid var(--mainBlack);
+}
+.btn-black:hover {
+  background: var(--mainBlack);
+  color: var(--mainColor);
+}
+.btn-pink {
+  font-size: 1.5rem;
+  color: var(--mainColor);
+  border: 0.2rem solid var(--mainColor);
+}
+.btn-pink:hover {
+  background: var(--mainColor);
+  color: var(--mainBlack);
+}
+/*Navbar*/
+
+.navbar-brand {
+  width: 3rem;
+}
+.toggler-icon {
+  font-size: 2.5rem;
+  color: var(--mainColor);
+}
+.nav-link {
+  color: var(--mainColor);
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.nav-link:hover {
+  color: var(--mainblack);
+}
+.nav-item .active {
+  color: var(--yellowTrans);
+}
+/*banner*/
+.banner .row {
+  min-height: calc(100vh - 76px);
+  background: linear-gradient(var(--grayTrans), var(--grayTrans)),
+    url("../img/pexels-alexander-dummer-134469.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.banner-text {
+  color: var(--mainWhite);
+  margin-top: -4rem;
+}
+/*about */
+.about-img__container {
+  position: relative;
+}
+.about-img__container img {
+  display: inline-block;
+}
+.about-img__container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  width: calc(100% + 1rem);
+  height: calc(100% + 1rem);
+  border: 0.5rem solid var(--yellowTrans);
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+.about-img__container:hover:before {
+  top: -0.5rem;
+  left: -0.5rem;
+}
+/*gallery*/
+
+.gallery {
+  background: var(--mainWhite);
+  border-bottom: 4px groove var(--yellowTrans);
+}
+.gallery-buttons {
+  list-style: none;
+}
+
+.gallery-item {
+  transition: all 0.6 linear;
+  max-height: 400px;
+}
+.gallery-item.hidden {
+  display: none;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: var(--mainBlack);
+  width: 100%;
+  height: 100%;
+}
+.gallery-item-img {
+  transition: all 1s ease-in-out;
+  opacity: 0.6;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.img-container:hover .gallery-item-img {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/*services*/
+.services {
+  color: var(--mainWhite);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/pexels-slondotpics-408518.jpg") center/cover fixed no-repeat;
+}
+.service img {
+  max-width: 70px;
+  max-height: 70px;
+}
+.service-title {
+  letter-spacing: 0.5rem;
+}
+.service-text {
+  word-spacing: 0.5rem;
+}
+/*footer*/
+.footer-social {
+  background-color: black;
+}
+.footer-social .footer-icon {
+  color: var(--mainWhite);
+  font-size: 1.5rem;
+}
+.footer-social .footer-icon:hover {
+  color: var(--mainColor);
+}
+.footer-contact {
+  background-color: var(--mainColor);
+}
