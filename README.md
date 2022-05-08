@@ -1,2 +1,2 @@
-# alex-landing-page
+# landing-page
 link : https://alexportfoliopage.netlify.app/
